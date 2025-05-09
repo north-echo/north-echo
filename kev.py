@@ -1,3 +1,6 @@
+# The following script will prompt the user for a CVE and determine if it's in CISA's
+# Known Exploited Vulnerabilities database
+
 import requests
 
 def check_cve_in_cisa_database(cve_id):
