@@ -1,9 +1,11 @@
+# The following script will take two Clair scans as input (.csv format) and compare them to determine 
+# remediated CVEs versus new CVEs between the two scans.
+
 import csv
 import sys
 import os
 from datetime import datetime
 
-# --- CORRECTED parse_clair_report function (expects lowercase 'severity') ---
 def parse_clair_report(report_path):
     """
     Parses a Clair CSV report and extracts unique vulnerability instances
