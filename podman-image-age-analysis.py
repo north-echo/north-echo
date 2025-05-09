@@ -5,7 +5,7 @@ import json
 import csv
 from datetime import datetime, timezone
 
-AUTHFILE_PATH = '/Users/clusk/Downloads/pull-secret.json'
+AUTHFILE_PATH = 'Path to pull secret'
 
 def reformat_quay_urls(input_txt):
     if not os.path.exists(input_txt):
