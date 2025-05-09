@@ -1,3 +1,6 @@
+# The following script will take a list of CVEs (.txt format) and determine which ones are in CISA's
+# Known Exploited Vulnerabilities database
+
 import requests
 
 def read_cve_file(file_path):
@@ -19,7 +22,7 @@ def check_cve_in_cisa(cve_list):
             print(f"{cve} is NOT in the database.")
 
 def main():
-    file_path = '/Users/clusk/Downloads/slo-report-cves.txt'  # Update this to your CVE file path
+    file_path = 'Path ro .txt file'  # Update this to your CVE file path
     cve_list = read_cve_file(file_path)
     check_cve_in_cisa(cve_list)
 
