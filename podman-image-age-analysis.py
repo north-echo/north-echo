@@ -1,3 +1,6 @@
+# The script takes a list of quay.io images in the following format (https://quay.io/repository/<organization>/<image>/manifest/sha256:79205d5895193f50947ebb4b8879978765f5dc336bc40549f56622fec4377b92?tab=vulnerabilities)
+# and provides build date, image age in days, and base image information in a .csv file
+
 import os
 import re
 import subprocess
